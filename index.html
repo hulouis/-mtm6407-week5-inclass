@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .compass {
+
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .point {
+
+      position: absolute;
+      font-size: 20px;
+      font-weight: bold;
+
+    }
+
+    .point.N {
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .point.S {
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .point.W {
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .point.E {
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  </style>
+
+</head>
+<div class="compass" id="compass"></div>
+
+<body>
+  <script type="module" src="./data.js"></script>
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
